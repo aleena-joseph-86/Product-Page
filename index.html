@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <div class="image">
+          <img src="image1.png" id="initailimage">
+          <div class="dots">
+            <button class="btn selected"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+          </div>
+        </div>
+        <div class="display">
+            <h1>Casual Shirts</h1>
+            <h2>Affordable Costs</h2>
+            <h3>From RS.199</h3>
+            
+            <form class="details">
+
+                <div class="size">
+                    <p>Size:</p>
+                <label for="small">
+                    <input type="radio" name="sizelist" id="small">
+                    <span>S</span>
+                </label>
+                <label for="medium">
+                    <input type="radio" name="sizelist" id="medium">
+                    <span>M</span>
+                </label>
+                    <label for="large">
+                    <input type="radio" name="sizelist" id="large">
+                    <span>L</span>
+                </label>
+                    <label for="xlarge">
+                    <input type="radio" name="sizelist" id="xlarge">
+                    <span>XL</span>
+                </label>
+                    <label for="xxlarge">
+                    <input type="radio" name="sizelist" id="xxlarge">
+                    <span>XXL</span>
+                </label>
+            </div>
+
+            <div class="colorlist">
+                <p>Color:</p>
+                <label for="red">
+                    <input type="radio" name="colors" id="red">
+                    <span id="redc"></span>
+                </label>
+                <label for="green">
+                    <input type="radio" name="colors" id="green">
+                    <span id="greenc"></span>
+                </label>
+                <label for="blue">
+                    <input type="radio" name="colors" id="blue">
+                    <span id="bluec"></span>
+                </label>
+                <label for="black">
+                    <input type="radio" name="colors" id="black">
+                    <span id="blackc"></span>
+                </label>
+            </div>
+
+            <div class="quantity">
+                <p>Quantity:</p>
+                <input type="number" placeholder="1">
+            </div>
+
+            <div class="btn">
+                <input type="submit" value="Submit" onclick="alertmsg()">
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
